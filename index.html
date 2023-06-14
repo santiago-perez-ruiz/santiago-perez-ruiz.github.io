@@ -2,43 +2,135 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Santiago Pérez Ruiz</title>
+  <title>Santiago Pérez Ruiz - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
+      margin: 0;
+      padding: 0;
+      background-color: #1a1a1a;
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .profile-pic {
+      border-radius: 50%;
+      max-width: 200px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      color: #333;
+      color: #ffffff;
+      font-size: 28px;
+      margin-bottom: 20px;
     }
 
     p {
       line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li:before {
+      content: "\f105";
+      font-family: "Font Awesome 5 Free";
+      display: inline-block;
+      margin-right: 5px;
+      width: 20px;
+      text-align: center;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .section__icon {
+      font-size: 40px;
+      margin-right: 15px;
+    }
+
+    .section__content {
+      text-align: left;
     }
   </style>
 </head>
 <body>
-  <h1>Hi, I'm Santiago Pérez Ruiz!</h1>
-  <p>About Me:</p>
-  <p>
-    I'm a skilled and competent professional in developing technological solutions for the banking sector. I specialize in leading impactful projects, both in technical leadership and in developing Python libraries to support the analytical cycle. My focus revolves around data science and data engineering, applying my skills to drive informed decision-making and improve process efficiency.
-  </p>
-  <p>Experience:</p>
-  <p>
-    I have extensive experience as a technical leader, guiding teams in executing technology projects in the financial sector. I have successfully led large-scale projects, ensuring the delivery of high-quality solutions and meeting established objectives.
-  </p>
-  <p>Skills:</p>
-  <ul>
-    <li>Python library development</li>
-    <li>Data science and data engineering</li>
-    <li>Technical leadership and project management</li>
-    <li>Complex problem analysis and resolution</li>
-    <li>Programming in C#, Java, JavaScript, TypeScript, PHP, Scala, and SAS</li>
-  </ul>
-  <p>Contact:</p>
-  <p>
-    I'm interested in continuing to lead high-impact projects and offer innovative solutions! If you'd like to get in touch, you can reach me via <a href="mailto:your.email@example.com">email</a>.
-  </p>
+  <div class="container">
+    <img src="your-profile-picture.jpg" alt="Profile Picture" class="profile-pic">
+    <h1>Santiago Pérez Ruiz</h1>
+
+    <div class="section">
+      <i class="fas fa-user section__icon"></i>
+      <div class="section__content">
+        <h2>About Me</h2>
+        <p>
+          I'm a skilled and competent professional in developing technological solutions for the banking sector. I specialize in leading impactful projects, both in technical leadership and in developing Python libraries to support the analytical cycle. My focus revolves around data science and data engineering, applying my skills to drive informed decision-making and improve process efficiency.
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <i class="fas fa-briefcase section__icon"></i>
+      <div class="section__content">
+        <h2>Experience</h2>
+        <p>
+          I have extensive experience as a technical leader, guiding teams in executing technology projects in the financial sector. I have successfully led large-scale projects, ensuring the delivery of high-quality solutions and meeting established objectives.
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <i class="fas fa-tools section__icon"></i>
+      <div class="section__content">
+        <h2>Skills</h2>
+        <ul>
+          <li>Data science and data engineering</li>
+          <li>Technical leadership and project management</li>
+          <li>Complex problem analysis and resolution</li>
+          <li>Programming in C#, Java, JavaScript, TypeScript, PHP, Scala, and SAS</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <i class="fas fa-envelope section__icon"></i>
+      <div class="section__content">
+        <h2>Contact</h2>
+        <p>
+          I'm interested in continuing to lead high-impact projects and offer innovative solutions! If you'd like to get in touch, you can reach me via <a href="mailto:santiago-perez-ruiz@outlook.com">email</a>.
+        </p>
+        <div>
+          <a href="https://linkedin.com/in/santiago-perez-ruiz" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+          <a href="https://github.com/santiago-perez-ruiz" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
